@@ -1,0 +1,106 @@
+---
+title: Getting Started
+
+description: Step-by-step guide to set up and begin using Paperguide Documentation
+---
+
+## Installation and Setup
+
+You install Paperguide by signing up for an account on the official website. The cloud-based service requires no local setup, allowing immediate access via web browser. Configure your profile with basic details like email and team information to personalize your dashboard.
+
+<Callout kind="tip">
+  Use a strong password and enable two-factor authentication for security.
+</Callout>
+
+<Steps>
+  <Step title="Sign Up" icon="user">
+    Visit paperguide.com and click `Sign Up`.
+    
+    Enter your email, create a password, and verify your account via the confirmation link sent to your inbox. This process takes less than `2 minutes`.
+  </Step>
+  <Step title="Create First Space" icon="folder">
+    From the dashboard, select `New Space`.
+    
+    Name it something descriptive, like `Project Docs`, and add a brief description. Set visibility to private or public based on your needs.
+  </Step>
+  <Step title="Import Content" icon="upload">
+    Use the import tool to bring in existing Markdown files or from GitHub repos.
+    
+    Drag and drop files or paste URLs. Paperguide converts them automatically while preserving formatting.
+  </Step>
+</Steps>
+
+## Basic Navigation
+
+Once set up, you navigate using the sidebar menu. Spaces appear as top-level items, with documents nested underneath. Search bar at the top helps locate specific content quickly.
+
+<Tabs>
+  <Tab title="Web Browser" icon="globe">
+    Access via any modern browser like Chrome or Firefox. No plugins required; everything runs in the cloud.
+    
+    Bookmark your dashboard for quick access. Responsive design ensures usability on mobile devices too.
+  </Tab>
+  <Tab title="Desktop App" icon="monitor">
+    Download the optional desktop client for offline editing.
+    
+    Sync changes when back online. Available for Windows, macOS, and Linux.
+  </Tab>
+</Tabs>
+
+<Columns cols={2}>
+  <Card title="Dashboard Overview" icon="home" href="#">
+    View all spaces and recent activity. Quick actions for creating new content.
+  </Card>
+  <Card title="Search Tips" icon="search" href="#">
+    Use keywords and filters to find docs. Supports advanced queries like `author:john since:2024`.
+  </Card>
+</Columns>
+
+## First Document Creation
+
+You create your first document by clicking `New Document` within a space. Choose from templates for API docs, guides, or blank pages. The editor supports real-time preview, syntax highlighting, and auto-save.
+
+<CodeGroup tabs="Markdown,API Doc">
+  ````markdown
+## Welcome Document
+
+This is your first doc in Paperguide.
+
+- List item one
+- List item two
+
+| Section | Status |
+|---------|--------|
+| Intro   | Done   |
+| Setup   | In Progress |
+````
+  ````markdown
+# API Endpoint
+
+## GET /documents
+
+Returns a list of documents.
+
+**Parameters:**
+- `limit` (optional): Number of items
+
+**Response:**
+```json
+[
+  {"id": 1, "title": "Doc1"}
+]
+```
+````
+</CodeGroup>
+
+<Expandable title="Troubleshooting Setup Issues">
+  If you encounter login problems, clear your browser cache or try incognito mode. Contact support via the help icon in the dashboard for persistent issues. Common errors include expired sessions, resolved by re-logging in.
+</Expandable>
+
+## Best Practices
+
+Organize spaces logically from the start. Use consistent naming conventions for documents, like `feature-api-guide`. Enable notifications for team updates to stay informed. Regularly backup exports to external storage.
+
+Integrate with tools like Slack for notifications or Zapier for automations. As you grow, explore advanced features like custom domains and analytics.
+
+This guide equips you to start documenting effectively. With practice, you'll leverage Paperguide's full potential for streamlined knowledge management. Total setup time is under `10 minutes`, leaving you ready to collaborate.

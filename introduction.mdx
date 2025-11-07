@@ -1,0 +1,102 @@
+---
+title: Introduction
+
+description: Overview of Paperguide Documentation and its core capabilities
+---
+
+## Getting Started
+
+Paperguide Documentation provides a centralized space to organize and manage your project documentation. You create, edit, and collaborate on docs using an intuitive interface that supports rich formatting and version control. Start by setting up your first space to structure your content effectively.
+
+<Columns cols={3}>
+  <Card title="Quick Setup" icon="rocket" href="/getting-started">
+    Set up your documentation space in minutes. Follow guided steps to import existing files and configure permissions.
+  </Card>
+  <Card title="Organize Content" icon="folder" href="/organizing-documents">
+    Structure your docs with spaces, folders, and tags. Easily navigate complex projects with hierarchical organization.
+  </Card>
+  <Card title="Collaborate" icon="users" href="/collaboration">
+    Invite team members and manage real-time editing. Track changes and resolve conflicts seamlessly.
+  </Card>
+</Columns>
+
+## Core Features
+
+You access powerful tools to enhance your documentation workflow. Paperguide supports Markdown, embeds, and custom components for dynamic content.
+
+<Callout kind="info">
+  Begin with the basics to build a solid foundation for your docs.
+</Callout>
+
+<Tabs>
+  <Tab title="Markdown Support" icon="code">
+    Write in standard Markdown with extensions for tables and diagrams.
+    
+````markdown
+## Example Document
+
+| Feature | Description |
+|---------|-------------|
+| Bold    | **Text**    |
+| Code    | `inline`    |
+````
+  </Tab>
+  <Tab title="Embeds" icon="link">
+    Integrate external content like videos or APIs.
+    
+    <Image
+      src="https://example.com/embed.png"
+      alt="Embedded content example"
+      width="600"
+      height="400"
+    />
+  </Tab>
+</Tabs>
+
+<Steps>
+  <Step title="Create Space" icon="plus">
+    Navigate to your dashboard and select `New Space`.
+    
+    Provide a name and description for your documentation area. This organizes related docs together.
+  </Step>
+  <Step title="Add Document" icon="file-text">
+    Inside the space, click `New Document`.
+    
+    Choose a template or start blank. Begin editing immediately with live preview.
+  </Step>
+  <Step title="Publish" icon="share-2">
+    Review changes and hit `Publish`.
+    
+    Share the link with your team or embed in external sites.
+  </Step>
+</Steps>
+
+<ExpandableGroup>
+  <Expandable title="What is a Space?" default-open="false">
+    A space acts as a container for related documentation. You group docs by project, team, or topic to maintain clarity. Access controls apply at the space level for secure collaboration. For example, create a space for `API Docs` to house all endpoint references.
+  </Expandable>
+  <Expandable title="Version Control" default-open="true">
+    Paperguide tracks every edit with automatic versioning. You revert to previous versions or compare changes side-by-side. This ensures no information is lost during iterative updates. Integrate with Git for advanced workflows if needed.
+  </Expandable>
+</ExpandableGroup>
+
+## Use Cases
+
+Teams use Paperguide for technical docs, onboarding guides, and knowledge bases. Developers document APIs, while product managers outline features. The platform scales from small projects to enterprise needs, supporting unlimited spaces and users.
+
+<CodeGroup tabs="JavaScript,Python">
+  ````javascript
+const doc = await paperguide.createDocument({ title: 'API Guide', content: '# Introduction\nWelcome to our API.' });
+console.log(`Created document ID: ${doc.id}`);
+````
+  ````python
+import paperguide
+
+doc = paperguide.create_document(title='API Guide', content='# Introduction\nWelcome to our API.')
+print(f'Created document ID: {doc.id}')
+````
+</CodeGroup>
+
+You benefit from search functionality across all spaces, with full-text indexing for quick retrieval. Export docs to PDF or HTML for offline access. Regular updates ensure compatibility with modern tools and standards.
+
+This introduction covers the essentials. Explore the linked pages for deeper dives into specific features. With Paperguide, you streamline documentation efforts and deliver clear, up-to-date information to your audience.
